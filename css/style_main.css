@@ -1,0 +1,528 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --font-cursiva: 'Pinyon Script', cursive;
+    --font-tangerine: 'Tangerine', cursive;
+    --bg1: #f7f7f7;
+    --bg2: #f6f5f5;
+    --primary: #09e1c0;
+    --subtitulo: #778899;
+    --bg-second: #f2edff;
+    --bg-hover-itens-menu: #d3d3d38a;
+    --white: #fff; 
+    --black: #000; 
+}
+
+html, body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color: var(--bg1);
+    box-shadow: 0 5px 10px #cecece;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vw;
+    height: 150px;
+    position: fixed;
+}
+
+.container_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.625rem;
+}
+
+.microscope{
+    width: 6.25rem;
+}
+
+.div_logo_texto :first-child{
+    font-family: var(--font-tangerine);
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid var(--bg-hover-itens-menu);
+}
+
+.dh{
+    color: var(--primary);
+}
+
+.div_logo_texto .mestre-logo{
+    font-size: 0.75rem;
+    color: var(--subtitulo);
+}
+
+#nav{
+    margin: 20px 0;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 1.25rem;
+}
+
+header nav ul li a{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--subtitulo);
+    border-bottom: 1px solid transparent;
+    transition: .2s;
+}
+
+header nav ul li a:hover{
+    color: var(--primary);
+    border-bottom: 2px solid var(--bg-hover-itens-menu);
+}
+
+#menu-hamburguer{
+    font-size: 40px;
+    color: var(--primary);
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+}
+
+.home{
+    /* padding-top: 8.75rem; */
+    padding-top: 200px;
+    background-color: var(--bg2);
+}
+
+.ola{
+    color: var(--subtitulo);
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+.nome_dhara{
+    color: var(--primary);
+    text-shadow: 1px 1px 0px var(--subtitulo);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+     margin: auto;
+}
+
+.descricao_formacao{
+    color: var(--subtitulo);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.625rem;
+}
+
+.crbm{
+    color: var(--subtitulo);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.texto_home{
+    color: #090909;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.875rem 2.5rem;
+    margin-top: 1.875rem;
+    gap: 6.25rem;
+}
+
+.text{
+    max-width: 50%;
+    margin-left: 6.25rem;
+}
+
+.text p{
+    text-align: justify;
+    margin-bottom: 2.5rem;
+    text-indent: 1.875rem;
+}
+
+.img_perfil{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.img_perfil img{
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.573);
+    width: 21.875rem;
+}
+
+.baixar_curriculo{
+    color: var(--subtitulo);
+    border-bottom: 2px solid transparent;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.baixar_curriculo:hover{
+     border-bottom: 2px solid var(--bg-hover-itens-menu);
+}
+
+.bx {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.icons_download{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formacao_bg{
+    width: 100%;
+    height: 25rem;
+    background-image: url(../img/formacao-academica-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 20px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacao_bg img{
+    width: 3.125rem;
+    margin-right: 0.625rem;
+}
+
+.formacao_bg h2{
+    text-align: center;
+    font-size: 1.875rem;
+    color: #fff;
+    text-shadow: 1px 1px 0px black
+}
+
+.uefs{
+    width: 5rem;
+}
+
+.uninter_logo{
+    width: 9.375rem;
+}
+
+.formacao{
+    text-align: center;
+    padding: 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card_formacao{
+    background-image: linear-gradient(to bottom, white, #EDF1F4);
+    border: 1px solid var(--bg-hover-itens-menu);
+    display: inline-block;
+    padding: 1.25rem;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.586);
+    border-radius: 1.25rem;
+    margin: 1.875rem;
+    width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_formacao h3{
+    color: var(--subtitulo);
+}
+
+.card_formacao h4{
+    color: var(--primary);
+    margin: 10px 0;
+}
+
+.card_formacao p{
+    color: var(--subtitulo);
+    font-weight: 500;
+}
+
+#destaques{
+    width: 100%;
+    height: 25rem;
+    background-image: url(../img/bg_destaques.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 20px black;
+}
+
+#destaques h2{
+    text-align: center;
+    font-size: 1.875rem;
+    color: #fff;
+    text-shadow: 1px 1px 0px black
+}
+
+.destaques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding: 5rem 1.25rem;
+}
+
+.card_destaques{
+    text-align: center;
+    width: 31.25rem;
+    min-height: 37.5rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.875rem;
+    padding: 1.875rem;
+    background-image: linear-gradient(to bottom, #fff, #EDF1F4);
+    border: 1px solid var(--bg-hover-itens-menu);
+    border-radius: 1.25rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.586);
+}
+
+.destaques h3{
+    color: var(--primary);
+    margin: 1.875rem 0;
+}
+
+.card_destaques p{
+    color: var(--subtitulo);
+    font-weight: 500;
+}
+
+.div_iframe{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_iframe video{
+    max-width: 100%;
+    border: 1px solid var(--bg-hover-itens-menu);
+}
+
+.lengenda_video{
+    margin-top: 0.625rem;
+}
+
+.card_destaques img{
+    width: 60%;
+}
+
+.card_destaques a{
+    border: 1px solid var(--bg-hover-itens-menu);
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3125rem;
+    margin-top: 1.25rem;
+    color: var(--subtitulo);
+}
+
+.card_destaques a:hover{
+    background-color: var(--bg-hover-itens-menu);
+}
+
+.card_destaques a .bx{
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+}
+
+.card_destaques a .visit{
+    font-size: 1.5625rem;
+     margin-right: 0.3125rem;
+}
+
+.competencias{
+    background-image: linear-gradient(to bottom, #fff, #EDF1F4);
+    padding-bottom: 3.125rem;
+    padding-top: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.competencias h2{
+    text-align: center;
+    color: var(--primary);
+    margin: 2.5rem;
+}
+
+.competencias ul{
+    columns: 2; 
+}
+
+.competencias ul li{
+    margin: 0 2.5rem;
+}
+
+.competencias ul li::before{
+    /* content: '\1F5F8\00A0'; */
+    content: '+ ';
+    color: var(--primary);
+}
+
+.contato{
+    background-image: linear-gradient(to bottom,#EDF1F4, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDF1F4;
+    padding-top: 9.375rem;
+    padding-bottom: 3.125rem;
+}
+
+.contato form{
+    border: 1px solid var(--bg-hover-itens-menu);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.359);
+    background-color: #f8f8f8;
+    padding: 2.5rem 1.875rem;
+    margin: 0 1.25rem;
+    border-radius: 1.25rem;
+    width: 25rem;
+}
+
+.contato form h2{
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 1.25rem;
+}
+
+.contato form label{
+    color: var(--subtitulo);
+    font-weight: 400;
+}
+
+.contato form input{
+    color: var(--subtitulo);
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    height: 1.875rem;
+    outline: none;
+    border: 1px solid var(--subtitulo);
+    border-radius: 5px;
+}
+
+.contato form textarea{
+    padding: 5px;
+    border: 1px solid var(--subtitulo);
+    color: var(--subtitulo);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 2.5rem;
+}
+
+.btn-form{
+    outline: none;
+    border-radius: 0.9375rem;
+    font-weight: bold;
+    background-color: #fff;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-form:hover{
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    background-image: linear-gradient(to bottom,#EDF1F4, #fff);
+    box-shadow: 5px 0px 10px #cecece;
+    text-align: center;
+    color: var(--subtitulo);
+    padding: 0.625rem;   
+}
+
+#logo-footer{
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-footer .developer{ 
+    color: var(--subtitulo);
+    font-weight: 500;
+    font-style: italic;
+}
+
+#logo-footer .gilberto{ 
+    color: var(--subtitulo);
+    font-weight: bold;
+    font-style: italic;
+}
+
+#logo-footer .maior-menor{
+    -webkit-text-stroke: 1px var(--subtitulo);
+    color: transparent;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#btn-arrow{
+    display: none;
+    color: #f9f9f9;
+    background-color: var(--primary);
+    font-size: 40px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: .3s;
+}
+
+#btn-arrow:hover{
+    color: #fff;
+}

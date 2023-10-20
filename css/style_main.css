@@ -110,7 +110,8 @@ section{
 .home{
     /* padding-top: 8.75rem; */
     padding-top: 200px;
-    background-color: var(--bg2);
+    /* background-color: var(--bg2); */
+    background-image: linear-gradient(to bottom,#EDF1F4, #fff);
 }
 
 .ola{

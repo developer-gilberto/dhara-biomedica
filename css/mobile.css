@@ -3,6 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
 :root{
     --font-cursiva: 'Pinyon Script', cursive;
     --font-tangerine: 'Tangerine', cursive;
@@ -53,7 +63,7 @@
     #nav{
         display: flex;
         justify-content: center;
-        background-color: var(--bg-second);
+        background-image: linear-gradient(45deg,#EDF1F4, #fff);
         border: 1px solid var(--bg-hover-itens-menu);
         box-shadow: 5px 8px 10px #b3b3b3;
         border-radius: 0 0 20px 20px;

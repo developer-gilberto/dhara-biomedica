@@ -110,7 +110,6 @@ section{
 .home{
     /* padding-top: 8.75rem; */
     padding-top: 200px;
-    /* background-color: var(--bg2); */
     background-image: linear-gradient(to bottom,#EDF1F4, #fff);
 }
 
@@ -510,20 +509,4 @@ footer{
     color: transparent;
     font-size: 1.6em;
     font-weight: bold;
-}
-
-#btn-arrow{
-    display: none;
-    color: #f9f9f9;
-    background-color: var(--primary);
-    font-size: 40px;
-    border-radius: 50%;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    transition: .3s;
-}
-
-#btn-arrow:hover{
-    color: #fff;
 }
